@@ -26,18 +26,54 @@
                 <a href="http://joelpurra.com/r/euparl">This page</a>
             </li>
             <li>
-                <a href="http://europarl.me/">Europarl.me</a>
+                <a href="http://europarl.me/">Europarl.me</a>: this code was initially written during the hackathon in January 2014.
             </li>
             <li>
-                <a href="http://parltrack.euwiki.org/">Parltrack</a>
+                <a href="http://parltrack.euwiki.org/">Parltrack</a>: the upstream data source.
             </li>
         </ul>
     </section>
 
     <section>
         <h2>
+            Disclaimer
+        </h2>
+
+        <p>
+            <em>The data has not yet been verified to be correct!</em>
+        </p>
+
+        <p>
+            While some of the results of the findings here are very interesting, they have not yet been properly verified. They could be wrong, they could be right. If you can help everyone out by verifying that the data from Parltrack, and the scripting in the open source projects, is correct - please do! There is currently (2014-01-28) work in progress to require machine-readable sources of data straight from the European Parliament, but until that has been resolved, keep in mind that this data is based upon parsing PDF-files meant for human eyes and paper printer consumption.
+        </p>
+
+        <p>
+            The data has not been filtered to reflect any opinions on votings, voters or votes. The data has only been reduced to include only votings with recorded corrections.
+        </p>
+    </section>
+
+    <section>
+        <h2>
+            What is a corrected vote?
+        </h2>
+
+        <p>
+            During votings in the <a href="https://en.wikipedia.org/wiki/European_Parliament">European Parliament</a> (EP), each elected and present <a href="https://en.wikipedia.org/wiki/Member_of_the_European_Parliament">Member of the European Parliament</a> (MEP) record their votes. Choices are For, Abstain and Against. If they discover that they made the wrong choice, they themselves can record their vote as being incorrect. This doesn't change the outcome of the voting, it is only done after the votes have been counted.
+        </p>
+
+        <p>
+            My inital thought regarding these corrected votes, is that they are purely erroneous button clicks in the electronic voting process. The number of corrected votes during certain votings, the number of corrected votes some individual MEPs have recorded and the obvious group belongings of the correctors, seem to tell a different story though. I now leave it up to you to dig deeper. I will be here to assist, if there are questions or suggestions.
+        </p>
+    </section>
+
+    <section>
+        <h2>
             Open source projects
         </h2>
+        <p>
+            The power is in your hands.
+            <em>Use the source, Luke!</em>
+        </p>
         <ul>
             <li>
                 <a href="https://github.com/joelpurra/ep-the-corrections">ep-the-corrections</a>: generates the HTML reports, based on data from ep-erroneous-votes.
@@ -70,8 +106,8 @@
                 <li>
                     Based on <a href="http://parltrack.euwiki.org/dumps/ep_votes.json.xz">Parltrack's ep_votes.json from 2014-01-27 02:39</a>.
                 </li>
-                <li>Total votings in dataset: 14.124</li>
-                <li>Total votes in dataset: 8.770.020</li>
+                <li>Total, unfiltered votings in dataset: 14.124</li>
+                <li>Total, unfiltered votes in dataset: 8.770.020</li>
                 <li>
                     <a href="output/2014-01-27T151038Z/">Human-readable format, for analysis.</a>
                 </li>
@@ -97,8 +133,8 @@
                 <li>
                     Based on <a href="http://parltrack.euwiki.org/dumps/ep_votes.json.xz">Parltrack's ep_votes.json from 2014-01-27 02:39</a>.
                 </li>
-                <li>Total votings in dataset: 14.124</li>
-                <li>Total votes in dataset: 8.770.020</li>
+                <li>Total, unfiltered votings in dataset: 14.124</li>
+                <li>Total, unfiltered votes in dataset: 8.770.020</li>
                 <li>
                     <a href="output/2014-01-27T124832Z/">Human-readable format, for analysis.</a>
                 </li>
