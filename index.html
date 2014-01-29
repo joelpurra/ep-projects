@@ -114,11 +114,12 @@
                 <li>
                     <a href="output/2014-01-28T231051Z/correctionals.json">Data dump.</a>
                 </li>
+                <li>Data with parsed names have been removed for now, see log entry from 2014-01-29.</li>
                 <li>
-                    <a href="output/2014-01-28T231051Z/correctionals.name-strings.json">Data dump with normalized MEP names.</a>
+                    <strike>Data dump with normalized MEP names.</strike>
                 </li>
                 <li>
-                    <a href="output/2014-01-28T231051Z/worst-offenders.txt">List of MEPs (grouped by name) who have made corrections, ordered by number of corrections in ascending order.</a>
+                    <strike>List of MEPs (grouped by name) who have made corrections, ordered by number of corrections in ascending order.</strike>(Removed for now, see log entry from 2014-01-29.)
                 </li>
             </ul>
         </section>
@@ -144,11 +145,12 @@
                 <li>
                     <a href="output/2014-01-27T151038Z/correctionals.json">Data dump.</a>
                 </li>
+                <li>Data with parsed names have been removed for now, see log entry from 2014-01-29.</li>
                 <li>
-                    <a href="output/2014-01-27T151038Z/correctionals.name-strings.json">Data dump with normalized MEP names.</a>
+                    <strike>Data dump with normalized MEP names.</strike>
                 </li>
                 <li>
-                    <a href="output/2014-01-27T151038Z/worst-offenders.txt">List of MEPs (grouped by name) who have made corrections, ordered by number of corrections in ascending order.</a>
+                    <strike>List of MEPs (grouped by name) who have made corrections, ordered by number of corrections in ascending order.</strike>
                 </li>
             </ul>
         </section>
@@ -171,11 +173,12 @@
                 <li>
                     <a href="output/2014-01-27T124832Z/correctionals.json">Data dump.</a>
                 </li>
+                <li>Data with parsed names have been removed for now, see log entry from 2014-01-29.</li>
                 <li>
-                    <a href="output/2014-01-27T124832Z/correctionals.name-strings.json">Data dump with normalized MEP names.</a>
+                    <strike>Data dump with normalized MEP names.</strike>
                 </li>
                 <li>
-                    <a href="output/2014-01-27T124832Z/worst-offenders.txt">List of MEPs (grouped by name) who have made corrections, ordered by number of corrections in ascending order.</a>
+                    <strike>List of MEPs (grouped by name) who have made corrections, ordered by number of corrections in ascending order.</strike>
                 </li>
             </ul>
         </section>
@@ -185,6 +188,21 @@
         <h2>
             Log
         </h2>
+        <section>
+            <h3>
+                <time datetime="2014-01-29" title="2014-01-29">
+                    2014-01-29
+                </time>
+                JSON with normalized and worst offenders list found to have incorrect MEP names
+            </h3>
+            <p>
+                Thanks to a journalist, errors propagated to the data with normalized names, which is the source for the lists of "worst offenders", have been discovered!
+            </p>
+            <p>
+                Since the data source in Parltrack is PDF files, which is far from optimal, there are sometimes problems with parsing them into a usable database. Having incorrect names affects the total count, since the totals have been grouped by name. This is the most recently released <a href="output/2014-01-28T231051Z/worst-offenders.txt">list of MEPs (grouped by name) who have made corrections, ordered by number of corrections in ascending order</a> - <em>it contains the incorrect grouping</em>. The other lists have been unlinked, at least for now, and I'll work on a solution.
+            </p>
+        </section>
+
         <section>
             <h3>
                 <time datetime="2014-01-28" title="2014-01-28">
