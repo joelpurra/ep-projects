@@ -6,8 +6,27 @@
     <title>Projects related to the European Parliament: Intro</title>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quando" />
     <style type="text/css" scoped="scoped">
+    body {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
     h1, h2, h3 {
         font-family: Quando, Helvetica, Verdana, sans-serif;
+    }
+    h2 {
+        border-bottom: 1px solid lightgrey;
+    }
+    .warning:before {
+        content: "Warning";
+        font-weight: bold;
+        font-size: 0.6em;
+        font-family: Helvetica, Verdana, sans-serif;
+        padding-left: 0.3em;
+        padding-right: 0.3em;
+        margin-right: 0.5em;
+        color: #514721;
+        background-color: #FFF6BF;
+        border: 1px solid #FFD324;
     }
     </style>
 
@@ -109,6 +128,9 @@
                 <li>Total, unfiltered votings in dataset: 14.124</li>
                 <li>Total, unfiltered votes in dataset: 8.770.020</li>
                 <li>
+                    <span class="warning">This data contains thousands of duplicated votings, and needs further verification! See logs from 2014-01-29.</span>
+                </li>
+                <li>
                     <a href="output/2014-01-29T164839Z/">Human-readable format, for analysis.</a>
                 </li>
                 <li>
@@ -117,101 +139,122 @@
             </ul>
         </section>
 
-        <section>
-            <h3>
-                <time datetime="2014-01-28T23:10:51Z" title="2014-01-28T23:10:51Z">
-                    2014-01-28T23:10:51Z
-                </time>
-            </h3>
-            <p>
-                Changes: removed empty links to dossiers.
-            </p>
-            <ul>
-                <li>
-                    Based on <a href="http://parltrack.euwiki.org/dumps/ep_votes.json.xz">Parltrack's ep_votes.json from 2014-01-28 02:35</a>.
-                </li>
-                <li>Total, unfiltered votings in dataset: 14.124</li>
-                <li>Total, unfiltered votes in dataset: 8.770.020</li>
-                <li>
-                    <a href="output/2014-01-28T231051Z/">Human-readable format, for analysis.</a>
-                </li>
-                <li>
-                    <a href="output/2014-01-28T231051Z/correctionals.json">Data dump.</a>
-                </li>
-                <li>Data with parsed names have been removed for now, see log entry from 2014-01-29.</li>
-                <li>
-                    <strike>Data dump with normalized MEP names.</strike>
-                </li>
-                <li>
-                    <strike>List of MEPs (grouped by name) who have made corrections, ordered by number of corrections in ascending order.</strike>(Removed for now, see log entry from 2014-01-29.)
-                </li>
-            </ul>
-        </section>
+        <details>
+            <summary>View older data sets</summary>
+            <section>
+                <h3>
+                    <time datetime="2014-01-28T23:10:51Z" title="2014-01-28T23:10:51Z">
+                        2014-01-28T23:10:51Z
+                    </time>
+                </h3>
+                <p>
+                    Changes: removed empty links to dossiers.
+                </p>
+                <ul>
+                    <li>
+                        Based on <a href="http://parltrack.euwiki.org/dumps/ep_votes.json.xz">Parltrack's ep_votes.json from 2014-01-28 02:35</a>.
+                    </li>
+                    <li>Total, unfiltered votings in dataset: 14.124</li>
+                    <li>Total, unfiltered votes in dataset: 8.770.020</li>
+                    <li>
+                        <a href="output/2014-01-28T231051Z/">Human-readable format, for analysis.</a>
+                    </li>
+                    <li>
+                        <a href="output/2014-01-28T231051Z/correctionals.json">Data dump.</a>
+                    </li>
+                    <li>
+                        <span class="warning">Data with parsed names have been removed for now, see log entry from 2014-01-29.</span>
+                    </li>
+                    <li>
+                        <strike>Data dump with normalized MEP names.</strike>
+                    </li>
+                    <li>
+                        <strike>List of MEPs (grouped by name) who have made corrections, ordered by number of corrections in ascending order.</strike>(Removed for now, see log entry from 2014-01-29.)
+                    </li>
+                </ul>
+            </section>
 
-        <section>
-            <h3>
-                <time datetime="2014-01-27T15:10:38Z" title="2014-01-27T15:10:38Z">
-                    2014-01-27T15:10:38Z
-                </time>
-            </h3>
-            <p>
-                Changes: votings are now listed by voting timestamp, in descending order.
-            </p>
-            <ul>
-                <li>
-                    Based on <a href="http://parltrack.euwiki.org/dumps/ep_votes.json.xz">Parltrack's ep_votes.json from 2014-01-27 02:39</a>.
-                </li>
-                <li>Total, unfiltered votings in dataset: 14.124</li>
-                <li>Total, unfiltered votes in dataset: 8.770.020</li>
-                <li>
-                    <a href="output/2014-01-27T151038Z/">Human-readable format, for analysis.</a>
-                </li>
-                <li>
-                    <a href="output/2014-01-27T151038Z/correctionals.json">Data dump.</a>
-                </li>
-                <li>Data with parsed names have been removed for now, see log entry from 2014-01-29.</li>
-                <li>
-                    <strike>Data dump with normalized MEP names.</strike>
-                </li>
-                <li>
-                    <strike>List of MEPs (grouped by name) who have made corrections, ordered by number of corrections in ascending order.</strike>
-                </li>
-            </ul>
-        </section>
+            <section>
+                <h3>
+                    <time datetime="2014-01-27T15:10:38Z" title="2014-01-27T15:10:38Z">
+                        2014-01-27T15:10:38Z
+                    </time>
+                </h3>
+                <p>
+                    Changes: votings are now listed by voting timestamp, in descending order.
+                </p>
+                <ul>
+                    <li>
+                        Based on <a href="http://parltrack.euwiki.org/dumps/ep_votes.json.xz">Parltrack's ep_votes.json from 2014-01-27 02:39</a>.
+                    </li>
+                    <li>Total, unfiltered votings in dataset: 14.124</li>
+                    <li>Total, unfiltered votes in dataset: 8.770.020</li>
+                    <li>
+                        <a href="output/2014-01-27T151038Z/">Human-readable format, for analysis.</a>
+                    </li>
+                    <li>
+                        <a href="output/2014-01-27T151038Z/correctionals.json">Data dump.</a>
+                    </li>
+                    <li>
+                        <span class="warning">Data with parsed names have been removed for now, see log entry from 2014-01-29.</span>
+                    </li>
+                    <li>
+                        <strike>Data dump with normalized MEP names.</strike>
+                    </li>
+                    <li>
+                        <strike>List of MEPs (grouped by name) who have made corrections, ordered by number of corrections in ascending order.</strike>
+                    </li>
+                </ul>
+            </section>
 
-        <section>
-            <h3>
-                <time datetime="2014-01-27T12:48:32Z" title="2014-01-27T12:48:32Z">
-                    2014-01-27T12:48:32Z
-                </time>
-            </h3>
-            <ul>
-                <li>
-                    Based on <a href="http://parltrack.euwiki.org/dumps/ep_votes.json.xz">Parltrack's ep_votes.json from 2014-01-27 02:39</a>.
-                </li>
-                <li>Total, unfiltered votings in dataset: 14.124</li>
-                <li>Total, unfiltered votes in dataset: 8.770.020</li>
-                <li>
-                    <a href="output/2014-01-27T124832Z/">Human-readable format, for analysis.</a>
-                </li>
-                <li>
-                    <a href="output/2014-01-27T124832Z/correctionals.json">Data dump.</a>
-                </li>
-                <li>Data with parsed names have been removed for now, see log entry from 2014-01-29.</li>
-                <li>
-                    <strike>Data dump with normalized MEP names.</strike>
-                </li>
-                <li>
-                    <strike>List of MEPs (grouped by name) who have made corrections, ordered by number of corrections in ascending order.</strike>
-                </li>
-            </ul>
-        </section>
+            <section>
+                <h3>
+                    <time datetime="2014-01-27T12:48:32Z" title="2014-01-27T12:48:32Z">
+                        2014-01-27T12:48:32Z
+                    </time>
+                </h3>
+                <ul>
+                    <li>
+                        Based on <a href="http://parltrack.euwiki.org/dumps/ep_votes.json.xz">Parltrack's ep_votes.json from 2014-01-27 02:39</a>.
+                    </li>
+                    <li>Total, unfiltered votings in dataset: 14.124</li>
+                    <li>Total, unfiltered votes in dataset: 8.770.020</li>
+                    <li>
+                        <a href="output/2014-01-27T124832Z/">Human-readable format, for analysis.</a>
+                    </li>
+                    <li>
+                        <a href="output/2014-01-27T124832Z/correctionals.json">Data dump.</a>
+                    </li>
+                    <li>
+                        <span class="warning">Data with parsed names have been removed for now, see log entry from 2014-01-29.</span>
+                    </li>
+                    <li>
+                        <strike>Data dump with normalized MEP names.</strike>
+                    </li>
+                    <li>
+                        <strike>List of MEPs (grouped by name) who have made corrections, ordered by number of corrections in ascending order.</strike>
+                    </li>
+                </ul>
+            </section>
+        </details>
     </section>
 
     <section>
         <h2>
             Log
         </h2>
+        <section>
+            <h3>
+                <time datetime="2014-01-29" title="2014-01-29">
+                    2014-01-29
+                </time>
+                Duplicated votings found in Parltrack's upstream data
+            </h3>
+            <p>
+                This evening, at least 2136 duplicate votings were found. They seem to stem from the fact that he has been sent duplicate lists, but under different voting titles or languages. This is yet another reason why being delivered original data directly from the European Parliament is important!
+            </p>
+        </section>
+
         <section>
             <h3>
                 <time datetime="2014-01-29" title="2014-01-29">
@@ -286,7 +329,7 @@
             Brainstorming and development starts, during the <a href="http://europarl.me/">Europarl Hackathon</a>, in preparation for the <a href="http://www.elections2014.eu/">European elections 2014</a>.
         </p>
     </section>
-    </section>
+
     <footer class="container">
         <hr />
         <p>
