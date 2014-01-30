@@ -10,7 +10,7 @@
         padding-left: 10%;
         padding-right: 10%;
     }
-    h1, h2, h3 {
+    h1, h2, h3, h4, h5, h6 {
         font-family: Quando, Helvetica, Verdana, sans-serif;
     }
     h2 {
@@ -117,42 +117,136 @@
 
         <section>
             <h3>
-                <time datetime="2014-01-30T16:12:14Z" title="2014-01-30T16:12:14Z">
-                    2014-01-30T16:12:14Z
+                <time datetime="2014-01-30T19:17:19Z" title="2014-01-30T19:17:19Z">
+                    2014-01-30T19:17:19Z
                 </time>
             </h3>
             <p>
-                Changes: publishing aggregate data in a JSON file, showing how many occurances each MEP name variation has.
+                Changes: separate output per term in the European Parliament. This will likely be the only time the fifth term is included, because there is no voting data for term 5 available in Parltrack.
             </p>
             <ul>
                 <li>
                     Based on <a href="http://parltrack.euwiki.org/dumps/ep_votes-dedup-clean.json.xz">Parltrack's ep_votes-dedup-clean.json from 2014-01-30 01:21</a>.
                 </li>
-                <li>Total, unfiltered votings: 11.991</li>
-                <li>Total, unfiltered votes: 7.399.213</li>
-                <li>Total, corrected votes: 23.457</li>
-                <li>Total, votings with corrections: 7.138</li>
-                <li>Total, votes in votings with corrections: 4.532.796</li>
                 <li>
                     <span class="warning">This data has been cleaned up from thousands of duplicated votings, but still needs further verification! See logs from 2014-01-29.</span>
                 </li>
+            </ul>
+
+            <h4>Term 7</h4>
+            <ul>
+                <li>Least recent, unfiltered voting: 2009-09-14T17:24:51</li>
+                <li>Most recent, unfiltered voting: 2014-01-16T16:25:01</li>
+                <li>Total, unfiltered votings: 5.606</li>
+                <li>Total, unfiltered votes: 3.538.437</li>
+                <li>Total, corrected votes: 15.012</li>
+                <li>Least recent, unfiltered voting with corrections: 2009-09-14T17:24:51</li>
+                <li>Most recent, unfiltered voting with corrections: 2014-01-16T16:25:01</li>
+                <li>Total, votings with corrections: 4.352</li>
+                <li>Total, votes in votings with corrections: 2.787.470</li>
                 <li>
-                    <a href="output/2014-01-30T161214Z/">Human-readable format of votings with corrections, for analysis.</a>
+                    <a href="output/2014-01-30T191719Z/term-7/">Human-readable format of votings with corrections, for analysis.</a>
                 </li>
                 <li>
-                    <a href="output/2014-01-30T161214Z/correctionals.json">Data dump with votings with corrections.</a>
+                    <a href="output/2014-01-30T191719Z/term-7/correctionals.json">Data dump with votings with corrections.</a>
                 </li>
                 <li>
-                    <a href="output/2014-01-30T161214Z/correctionals.grouped-by-mep.json">Data dump of MEPs (grouped by database ID or name) who have made corrections, ordered by number of corrections in ascending order.</a>
+                    <a href="output/2014-01-30T191719Z/term-7/correctionals.grouped-by-mep.json">Data dump of MEPs (grouped by database ID or name) who have made corrections, ordered by number of corrections in ascending order.</a>
                 </li>
                 <li>
-                    <a href="output/2014-01-30T161214Z/aggregates.json">Data dump with aggregate values.</a>
+                    <a href="output/2014-01-30T191719Z/term-7/aggregates.json">Data dump with aggregate values.</a>
+                </li>
+            </ul>
+
+            <h4>Term 6</h4>
+            <ul>
+                <li>Least recent, unfiltered voting: 2004-09-15T12:11:38</li>
+                <li>Most recent, unfiltered voting: 2009-05-07T16:09:04</li>
+                <li>Total, unfiltered votings: 6.385</li>
+                <li>Total, unfiltered votes: 3.860.776</li>
+                <li>Total, corrected votes: 8.445</li>
+                <li>Least recent, unfiltered voting with corrections: 2007-01-18T12:06:49</li>
+                <li>Most recent, unfiltered voting with corrections: 2009-05-07T12:49:45</li>
+                <li>Total, votings with corrections: 2.786</li>
+                <li>Total, votes in votings with corrections: 1.745.326</li>
+                <li>
+                    <a href="output/2014-01-30T191719Z/term-6/">Human-readable format of votings with corrections, for analysis.</a>
+                </li>
+                <li>
+                    <a href="output/2014-01-30T191719Z/term-6/correctionals.json">Data dump with votings with corrections.</a>
+                </li>
+                <li>
+                    <a href="output/2014-01-30T191719Z/term-6/correctionals.grouped-by-mep.json">Data dump of MEPs (grouped by database ID or name) who have made corrections, ordered by number of corrections in ascending order.</a>
+                </li>
+                <li>
+                    <a href="output/2014-01-30T191719Z/term-6/aggregates.json">Data dump with aggregate values.</a>
+                </li>
+            </ul>
+
+            <h4>Term 5</h4>
+            <ul>
+                <li>Least recent, unfiltered voting: null</li>
+                <li>Most recent, unfiltered voting: null</li>
+                <li>Total, unfiltered votings: 0</li>
+                <li>Total, unfiltered votes: 0</li>
+                <li>Total, corrected votes: 0</li>
+                <li>Least recent, unfiltered voting with corrections: null</li>
+                <li>Most recent, unfiltered voting with corrections: null</li>
+                <li>Total, votings with corrections: 0</li>
+                <li>Total, votes in votings with corrections: 0</li>
+                <li>
+                    <a href="output/2014-01-30T191719Z/term-5/">Human-readable format of votings with corrections, for analysis.</a>
+                </li>
+                <li>
+                    <a href="output/2014-01-30T191719Z/term-5/correctionals.json">Data dump with votings with corrections.</a>
+                </li>
+                <li>
+                    <a href="output/2014-01-30T191719Z/term-5/correctionals.grouped-by-mep.json">Data dump of MEPs (grouped by database ID or name) who have made corrections, ordered by number of corrections in ascending order.</a>
+                </li>
+                <li>
+                    <a href="output/2014-01-30T191719Z/term-5/aggregates.json">Data dump with aggregate values.</a>
                 </li>
             </ul>
         </section>
 
         <details>
             <summary>View older data sets</summary>
+            <section>
+                <h3>
+                    <time datetime="2014-01-30T16:12:14Z" title="2014-01-30T16:12:14Z">
+                        2014-01-30T16:12:14Z
+                    </time>
+                </h3>
+                <p>
+                    Changes: publishing aggregate data in a JSON file, showing how many occurances each MEP name variation has.
+                </p>
+                <ul>
+                    <li>
+                        Based on <a href="http://parltrack.euwiki.org/dumps/ep_votes-dedup-clean.json.xz">Parltrack's ep_votes-dedup-clean.json from 2014-01-30 01:21</a>.
+                    </li>
+                    <li>Total, unfiltered votings: 11.991</li>
+                    <li>Total, unfiltered votes: 7.399.213</li>
+                    <li>Total, corrected votes: 23.457</li>
+                    <li>Total, votings with corrections: 7.138</li>
+                    <li>Total, votes in votings with corrections: 4.532.796</li>
+                    <li>
+                        <span class="warning">This data has been cleaned up from thousands of duplicated votings, but still needs further verification! See logs from 2014-01-29.</span>
+                    </li>
+                    <li>
+                        <a href="output/2014-01-30T161214Z/">Human-readable format of votings with corrections, for analysis.</a>
+                    </li>
+                    <li>
+                        <a href="output/2014-01-30T161214Z/correctionals.json">Data dump with votings with corrections.</a>
+                    </li>
+                    <li>
+                        <a href="output/2014-01-30T161214Z/correctionals.grouped-by-mep.json">Data dump of MEPs (grouped by database ID or name) who have made corrections, ordered by number of corrections in ascending order.</a>
+                    </li>
+                    <li>
+                        <a href="output/2014-01-30T161214Z/aggregates.json">Data dump with aggregate values.</a>
+                    </li>
+                </ul>
+            </section>
+
             <section>
                 <h3>
                     <time datetime="2014-01-30T01:33:32Z" title="2014-01-30T01:33:32Z">
@@ -348,6 +442,18 @@
         <h2>
             Log
         </h2>
+        <section>
+            <h3>
+                <time datetime="2014-01-30" title="2014-01-30">
+                    2014-01-30
+                </time>
+                Results per European Parliament term
+            </h3>
+            <p>
+                There have been several requests to split the voting data per term, so now that is done for term 5, 6 and 7. Term 5 is only there to verify that there are no votes that are from that term, and will likely be excluded until there is. Hopefully there this will also lead to more automation of data exports.
+            </p>
+        </section>
+
         <section>
             <h3>
                 <time datetime="2014-01-29" title="2014-01-29">
