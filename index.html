@@ -114,8 +114,8 @@
 
         <section>
             <h3>
-                <time datetime="2014-01-29T16:48:39Z" title="2014-01-29T16:48:39Z">
-                    2014-01-29T16:48:39Z
+                <time datetime="2014-01-29T23:44:56Z" title="2014-01-29T23:44:56Z">
+                    2014-01-29T23:44:56Z
                 </time>
             </h3>
             <p>
@@ -123,24 +123,57 @@
             </p>
             <ul>
                 <li>
-                    Based on <a href="http://parltrack.euwiki.org/dumps/ep_votes-2ndcleaning.json.xz">Parltrack's ep_votes-2ndcleaning.json from 2014-01-29 01:41</a>.
+                    Based on <a href="http://parltrack.euwiki.org/dumps/ep_votes-dedup.json.xz">Parltrack's ep_votes-dedup.json from 2014-01-29 22:19</a>.
                 </li>
-                <li>Total, unfiltered votings in dataset: 14.124</li>
-                <li>Total, unfiltered votes in dataset: 8.770.020</li>
+                <li>Total, unfiltered votings in dataset: 11.982</li>
+                <li>Total, unfiltered votes in dataset: 7.397.461</li>
+                <li>Total, filtered votings (with corrections) in dataset: 7.138</li>
+                <li>Total, filtered votes (in votings with corrections) in dataset: 4.532.796</li>
+                <li>Total, corrected votes in dataset: 23.457</li>
                 <li>
-                    <span class="warning">This data contains thousands of duplicated votings, and needs further verification! See logs from 2014-01-29.</span>
+                    <span class="warning">This data has been cleaned up from thousands of duplicated votings, but still needs further verification! See logs from 2014-01-29.</span>
                 </li>
                 <li>
-                    <a href="output/2014-01-29T164839Z/">Human-readable format, for analysis.</a>
+                    <a href="output/2014-01-29T234456Z/">Human-readable format, for analysis.</a>
                 </li>
                 <li>
-                    <a href="output/2014-01-29T164839Z/correctionals.json">Data dump.</a>
+                    <a href="output/2014-01-29T234456Z/correctionals.json">Data dump.</a>
+                </li>
+                <li>
+                    <a href="output/2014-01-29T234456Z/correctionals.grouped-by-mep.json">Data dump of MEPs (grouped by database ID or name) who have made corrections, ordered by number of corrections in ascending order.</a>
                 </li>
             </ul>
         </section>
 
         <details>
             <summary>View older data sets</summary>
+            <section>
+                <h3>
+                    <time datetime="2014-01-29T16:48:39Z" title="2014-01-29T16:48:39Z">
+                        2014-01-29T16:48:39Z
+                    </time>
+                </h3>
+                <p>
+                    Changes: improved links to MEPs pages on Parltrack.
+                </p>
+                <ul>
+                    <li>
+                        Based on <a href="http://parltrack.euwiki.org/dumps/ep_votes-2ndcleaning.json.xz">Parltrack's ep_votes-2ndcleaning.json from 2014-01-29 01:41</a>.
+                    </li>
+                    <li>Total, unfiltered votings in dataset: 14.124</li>
+                    <li>Total, unfiltered votes in dataset: 8.770.020</li>
+                    <li>
+                        <span class="warning">This data contains thousands of duplicated votings, and needs further verification! See logs from 2014-01-29.</span>
+                    </li>
+                    <li>
+                        <a href="output/2014-01-29T164839Z/">Human-readable format, for analysis.</a>
+                    </li>
+                    <li>
+                        <a href="output/2014-01-29T164839Z/correctionals.json">Data dump.</a>
+                    </li>
+                </ul>
+            </section>
+
             <section>
                 <h3>
                     <time datetime="2014-01-28T23:10:51Z" title="2014-01-28T23:10:51Z">
@@ -252,6 +285,9 @@
             </h3>
             <p>
                 This evening, at least 2136 duplicate votings were found. They seem to stem from the fact that he has been sent duplicate lists, but under different voting titles or languages. This is yet another reason why being delivered original data directly from the European Parliament is important!
+            </p>
+            <p>
+                Update: a new, deduplicated dataset has been released from Parltrack. The dumps on this page, from 2014-01-29T23:44:56Z, should be based on it.
             </p>
         </section>
 
