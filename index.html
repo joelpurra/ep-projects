@@ -114,16 +114,16 @@
 
         <section>
             <h3>
-                <time datetime="2014-01-29T23:44:56Z" title="2014-01-29T23:44:56Z">
-                    2014-01-29T23:44:56Z
+                <time datetime="2014-01-30T01:33:32Z" title="2014-01-30T01:33:32Z">
+                    2014-01-30T01:33:32Z
                 </time>
             </h3>
             <p>
-                Changes: used a new dataset from Parltrack, that removed 2142 duplicate votings.
+                Changes: used a new dataset from Parltrack, that removed 2142 duplicate votings, plus has the right MEP database IDs.
             </p>
             <ul>
                 <li>
-                    Based on <a href="http://parltrack.euwiki.org/dumps/ep_votes-dedup.json.xz">Parltrack's ep_votes-dedup.json from 2014-01-29 22:19</a>.
+                    Based on <a href="http://parltrack.euwiki.org/dumps/ep_votes-dedup-clean.json.xz">Parltrack's ep_votes-dedup-clean.json from 2014-01-30 01:21</a>.
                 </li>
                 <li>Total, unfiltered votings in dataset: 11.982</li>
                 <li>Total, unfiltered votes in dataset: 7.397.461</li>
@@ -134,19 +134,52 @@
                     <span class="warning">This data has been cleaned up from thousands of duplicated votings, but still needs further verification! See logs from 2014-01-29.</span>
                 </li>
                 <li>
-                    <a href="output/2014-01-29T234456Z/">Human-readable format, for analysis.</a>
+                    <a href="output/2014-01-30T013332Z/">Human-readable format, for analysis.</a>
                 </li>
                 <li>
-                    <a href="output/2014-01-29T234456Z/correctionals.json">Data dump.</a>
+                    <a href="output/2014-01-30T013332Z/correctionals.json">Data dump.</a>
                 </li>
                 <li>
-                    <a href="output/2014-01-29T234456Z/correctionals.grouped-by-mep.json">Data dump of MEPs (grouped by database ID or name) who have made corrections, ordered by number of corrections in ascending order.</a>
+                    <a href="output/2014-01-30T013332Z/correctionals.grouped-by-mep.json">Data dump of MEPs (grouped by database ID or name) who have made corrections, ordered by number of corrections in ascending order.</a>
                 </li>
             </ul>
         </section>
 
         <details>
             <summary>View older data sets</summary>
+            <section>
+                <h3>
+                    <time datetime="2014-01-29T23:44:56Z" title="2014-01-29T23:44:56Z">
+                        2014-01-29T23:44:56Z
+                    </time>
+                </h3>
+                <p>
+                    Changes: used a new dataset from Parltrack, that removed 2142 duplicate votings.
+                </p>
+                <ul>
+                    <li>
+                        Based on <a href="http://parltrack.euwiki.org/dumps/ep_votes-dedup.json.xz">Parltrack's ep_votes-dedup.json from 2014-01-29 22:19</a>.
+                    </li>
+                    <li>Total, unfiltered votings in dataset: 11.982</li>
+                    <li>Total, unfiltered votes in dataset: 7.397.461</li>
+                    <li>Total, filtered votings (with corrections) in dataset: 7.138</li>
+                    <li>Total, filtered votes (in votings with corrections) in dataset: 4.532.796</li>
+                    <li>Total, corrected votes in dataset: 23.457</li>
+                    <li>
+                        <span class="warning">This data has been cleaned up from thousands of duplicated votings, but still needs further verification! See logs from 2014-01-29.</span>
+                    </li>
+                    <li>
+                        <a href="output/2014-01-29T234456Z/">Human-readable format, for analysis.</a>
+                    </li>
+                    <li>
+                        <a href="output/2014-01-29T234456Z/correctionals.json">Data dump.</a>
+                    </li>
+                    <li>
+                        <a href="output/2014-01-29T234456Z/correctionals.grouped-by-mep.json">Data dump of MEPs (grouped by database ID or name) who have made corrections, ordered by number of corrections in ascending order.</a>
+                    </li>
+                </ul>
+            </section>
+
             <section>
                 <h3>
                     <time datetime="2014-01-29T16:48:39Z" title="2014-01-29T16:48:39Z">
