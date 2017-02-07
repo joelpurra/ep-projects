@@ -19,6 +19,6 @@ Developed during the [Europarl Hackathon](http://europarl.me/), in preparation f
 
 
 
-Copyright &copy; 2014, 2014, 2015, 2016, 2017, [Joel Purra](https://joelpurra.com/) All rights reserved.
+Copyright &copy; 2014, 2015, 2016, 2017, [Joel Purra](https://joelpurra.com/) All rights reserved.
 
 When using [ep-projects](https://github.com/joelpurra/ep-projects), comply to the [GNU Affero General Public License 3.0 (AGPL-3.0)](https://en.wikipedia.org/wiki/Affero_General_Public_License). [Your donations are appreciated!](https://joelpurra.com/donate/)
